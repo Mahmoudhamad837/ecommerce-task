@@ -1,0 +1,41 @@
+<div class="grid grid-cols-2">
+    <div>
+        <img src="assets\images\login.PNG" class="w-full h-screen">
+    </div>
+    <div class="flex h-full items-center justify-center">
+        <div class="w-full max-w-md space-y-8">
+          <div>
+            <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900"><span class="text-blue-500">You</span>topia</h2>
+          </div>
+          <form class="mt-8 space-y-6" [formGroup]="signinForm" (ngSubmit)="login($event)">
+            <div class="-space-y-px">
+              <div class="mb-2">
+                <label for="email-address" class="text-blue-400 ml-4">Email*</label>
+                <input formControlName="email" id="email-address" name="email" type="email" autocomplete="email" required class="relative block w-full appearance-none rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                <span class="text-red-500" *ngIf="!signinForm.get('email').valid && signinForm.get('email').touched && signinForm.get('email').dirty">Email is Required</span>
+              </div>
+              <div>
+                <label for="password" class="text-blue-400 ml-4">Password*</label>
+                <div class="custom-input relative">
+                    <input formControlName="password" id="password" name="password" [type]="isPasswordShown ? 'text' : 'password'" autocomplete="current-password" required class="relative block w-full appearance-none rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                    <i class="absolute right-5 top-[35%] z-50" [ngClass]="isPasswordShown ? 'fa fa-eye' : 'fa fa-eye-slash'" (click)="isPasswordShown = !isPasswordShown"></i>
+                </div>
+                <span class="text-red-500" *ngIf="!signinForm.get('password').valid && signinForm.get('password').touched && signinForm.get('password').dirty">Password is Required</span>
+              </div>
+            </div>
+      
+            <div class="flex">
+              <div class="text-sm">
+                <span>Forgot your </span><a class="font-small text-indigo-600 hover:text-indigo-500">password?</a>
+              </div>
+            </div>
+      
+            <div class="bg-blue-500 text-white rounded-2xl">
+              <button [disabled]="!signinForm.valid" type="submit" [ngClass]="!signinForm.valid ? 'bg-gray-600' : ''" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
