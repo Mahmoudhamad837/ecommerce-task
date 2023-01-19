@@ -13,7 +13,7 @@ import { SingleProductComponent } from './single-product/single-product.componen
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
   ]
 })
 export class PagesModule { }

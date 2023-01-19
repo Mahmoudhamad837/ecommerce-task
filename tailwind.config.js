@@ -6,6 +6,22 @@ module.exports = {
     "./components/**/.ts", "./pages/*/.ts"
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     colors: {
       black: "#030303",
       blue: colors.blue,
@@ -29,6 +45,7 @@ module.exports = {
       beige: '#F5D283',
       pink: '#E68AA8',
       summerGreen: '#A7BF89',
+      buttonColor: '#2264D1'
     },
     extend: {
       animation: {

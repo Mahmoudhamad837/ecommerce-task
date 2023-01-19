@@ -1,39 +1,62 @@
-<div class="bg-white">
-    <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+<div class="bg-white-900">
+    <div class="py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <h2 class="sr-only">Products</h2>
   
-      <div class="grid grid-cols-4 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        <a href="#" class="group">
-          <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
-          </div>
-          <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-        </a>
+      <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div class="shadow-inner">
+            <a class="group" routerLink="product/1">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <div class="details px-4">
+                    <p class="text-black-900 mt-4">
+                        Vintage Typewriter to post awesome stories about UI design and webdev.
+                    </p>
+                    <p class="mt-1 text-3xl font-large text-gray-900 my-4">$48</p>
+                    <span class="text-gray-500 text-sm">
+                        Eligible for Shipping To Mars or somewhere else
+                    </span>
+                    <div class="flex justify-between mt-4">
+                        <span>Stars 4.5</span>
+                        <button type="button" class="rounded-md border border-buttonColor bg-indigo-600 py-2 px-4 text-sm font-medium text-buttonColor">
+                            <span>
+                                <i class="fa fa-heart-o text-buttonColor"></i> Watch
+                            </span>
+                        </button>
+                    </div>
+                </div>
+              </a>
+        </div>
   
-        <a href="#" class="group">
-          <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-          </div>
-          <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-        </a>
+        <div>
+            <a href="#" class="group">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+            </a>
+        </div>
   
-        <a href="#" class="group">
-          <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
-          </div>
-          <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-        </a>
+        <div>
+            <a href="#" class="group">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+            </a>
+        </div>
   
-        <a href="#" class="group">
-          <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-          </div>
-          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-        </a>
+        <div>
+            <a href="#" class="group">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+            </a>
+        </div>
   
         <!-- More products... -->
       </div>
