@@ -150,7 +150,7 @@
                 <span class="mx-3">{{numOfQty}}</span>
                 <button [disabled]="numOfQty===5" (click)="increaseQty()"  class="disabled:border-gray-600 border-2  cursor-pointer px-2 border-blue-600 ">+</button>
               </div>
-              <button  class="text-white bg-[#828EF9] rounded-md h-[42px] cursor-pointer w-[173px]">ADD TO CARD</button>
+              <button  class="text-white bg-[#828EF9] rounded-md h-[42px] cursor-pointer w-[173px]" (click)="addToCart()">ADD TO CARD</button>
             </div>
         </div>
     </div> 
