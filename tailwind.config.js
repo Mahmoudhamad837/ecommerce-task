@@ -2,8 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
-    "./src/**/*.{html,ts}",
-    "./components/**/.ts", "./pages/*/.ts"
+    "./src/**/*.{html,ts}"
   ],
   theme: {
     screens: {
@@ -75,6 +74,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
+    require('tailwindcss-aria-attributes'),
     require("tailwindcss-scoped-groups"),
     require('tailwindcss-rtl'),
     require('@tailwindcss/aspect-ratio'),

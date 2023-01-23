@@ -1,20 +1,25 @@
-<div class="bg-white relative">
-    <div class="grid grid-cols-2">  
+<div class=" relative  h-screen ">
+    <div class="grid mobile:grid-cols-1 tablet:grid-cols-2 ">  
       <!-- Image gallery -->
-      <div class="max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
-        <div class="aspect-w-3 aspect-h-4 hidden overflow-hidden rounded-lg lg:block">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+  
+    
+        <div class="flex justify-center items-center relative h-screen bg-[#E3E5FA]">
+          <span class="text-gray-600 cursor-pointer absolute top-5 left-5" routerLink="../../../products"><i class="fa fa-arrow-left"></i> back to list</span>
+          <div class="w-[55%] h-[55%] rotate-[-5deg] ">
+
+         <img class="w-full" src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+       </div>  
         </div>
-        <div class="aspect-w-4 aspect-h-5 sm:overflow-hidden sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
-        </div>
-      </div>
+      
   
       <!-- Product info -->
-      <div class="mx-auto max-w-2xl px-4 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
-        <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Whiskas® Dry Adult Dewasa 7+, Cat food Rasa Mackerel</h1>
-        </div>
+      <div class="bg-[#F5F5F5] h-screen px-8 pt-10 mb-8 ">
+        <span class="bg-red-600 text-white px-1 py-1 rounded-md ">
+          HOTSALE
+        </span>
+     
+          <h2 class="my-3 font-bold text-black">Whiskas® Dry Adult Dewasa 7+, <br />Cat food Rasa Mackerel</h2>
+      
   
         <!-- Options -->
         <div class="mt-4 lg:row-span-3 lg:mt-0">
@@ -23,34 +28,34 @@
           <div class="mt-6">
             <h3 class="sr-only">Reviews</h3>
             <div class="flex items-center">
-                <span class="mr-4">CAT FOOD</span>
-              <div class="flex items-center">
+                <span class="text-[#50CC98] font-bold">CAT FOOD |</span>
+              <div class="flex items-center mx-3">
                 <!--
                   Heroicon name: mini/star
   
                   Active: "text-gray-900", Default: "text-gray-200"
                 -->
-                <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="text-[#F4B30C] h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
   
                 <!-- Heroicon name: mini/star -->
-                <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="text-[#F4B30C] h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
   
                 <!-- Heroicon name: mini/star -->
-                <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="text-[#F4B30C] h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
   
                 <!-- Heroicon name: mini/star -->
-                <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="text-[#F4B30C] h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
   
                 <!-- Heroicon name: mini/star -->
-                <svg class="text-gray-200 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="text-[#F4B30C] h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
               </div>
@@ -59,88 +64,65 @@
             </div>
           </div>
 
-          <div class="py-5 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
+          <div class="">
             <!-- Description and details -->
            
             <div class="mt-4">
-              <h3 class="text-sm font-medium text-gray-900">Details:</h3>
+              <h3 class="text-sm font-medium ">Description:</h3>
     
               <div class="mt-4">
-                <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
-                    <li class="text-gray-400"><span class="text-gray-600">Makanan yang lengkap dan seimbang, dengan 41 nutrisi penting.</span></li>
-                    <li class="text-gray-400"><span class="text-gray-600">Mengandung antioksidan (vitamin E dan selenium) untuk sistem kekebalan tubuh yang sehat.</span></li>
-                    <li class="text-gray-400"><span class="text-gray-600">Mengandung serat untuk memperlancar pencernaan dan meningkatkan kesehatan usus.</span></li>
-                    <li class="text-gray-400"><span class="text-gray-600">Diperkaya dengan kalsium, fosfor dan vitamin D untuk tulang yang sehat.</span></li>
+                <ul role="list" class="list-disc space-y-2 ml-7 text-sm">
+                    <li><span >Makanan yang lengkap dan seimbang, dengan 41 nutrisi penting.</span></li>
+                    <li ><span >Mengandung antioksidan (vitamin E dan selenium) untuk sistem kekebalan tubuh yang sehat.</span></li>
+                    <li ><span >Mengandung serat untuk memperlancar pencernaan dan meningkatkan kesehatan usus.</span></li>
+                    <li ><span >Diperkaya dengan kalsium, fosfor dan vitamin D untuk tulang yang sehat.</span></li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="py-5 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
-              <div class="grid grid-cols-6 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-                <div class="bg-white h-20">
-                    <img class="h-full" src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg"/>
+         
+              <div class="grid  gap-4 mobile:grid-cols-4 tablet:grid-cols-6 laptop:grid-cols-8 my-4 cursor-pointer">
+                <div class="h-30 flex justify-center items-center border-4 border-gray-400 rounded-md">
+                    <img class="p-1" src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg"/>
                 </div>
-                <div class="bg-white h-20">
-                    <img class="h-full" src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"/>
-                </div>
-                <div class="bg-white h-20">
-                    <img class="h-full" src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg"/>
-                </div>
+                <div class="h-30 flex justify-center items-center rounded-md">
+                  <img class="" src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg"/>
               </div>
-          </div>
-  
-          <form class="mt-5">
-            <!-- Sizes -->
-            <div class="mt-5">
-              <div class="flex items-center justify-between">
-                <h3 class="text-sm font-medium text-gray-900">Size</h3>
-              </div>
-  
-              <fieldset class="mt-4">
-                <legend class="sr-only">Choose a size</legend>
-                <div class="grid grid-cols-6 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-                  <!-- Active: "ring-2 ring-indigo-500" -->
-                  <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-gray-50 text-gray-900 cursor-pointer">
-                    <input type="radio" name="size-choice" value="XXS" class="sr-only" aria-labelledby="size-choice-0-label">
-                    <span id="size-choice-0-label">1.5 kg</span>
-  
-                    <span aria-hidden="true" class="pointer-events-none absolute -inset-px rounded-md"></span>
-                  </label>
-  
-                  <!-- Active: "ring-2 ring-indigo-500" -->
-                  <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
-                    <input type="radio" name="size-choice" value="XS" class="sr-only" aria-labelledby="size-choice-1-label">
-                    <span id="size-choice-1-label">1 kg</span>
-                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
-                  </label>
-  
-                  <!-- Active: "ring-2 ring-indigo-500" -->
-                  <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
-                    <input type="radio" name="size-choice" value="3XL" class="sr-only" aria-labelledby="size-choice-7-label">
-                    <span id="size-choice-2-label">500 gr</span>
-                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
-                  </label>
-
-                  <!-- Active: "ring-2 ring-indigo-500" -->
-                  <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
-                    <input type="radio" name="size-choice" value="3XL" class="sr-only" aria-labelledby="size-choice-7-label">
-                    <span id="size-choice-3-label">250 gr</span>
-                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
-                  </label>
-                </div>
-              </fieldset>
+              <div class="h-30 flex justify-center items-center border-2 rounded-md">
+                <img class="" src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg"/>
             </div>
-          </form>
+            
+              </div>
+            
+              <div class="flex flex-col">
+                <h3 class="font-bold text-black">Size:</h3>
+                <div class="flex gap-5  items-center my-2 cursor-pointer">
+                  <span class="bg-[#818AF9] text-white rounded-md p-2 border-1">
+                    1.5 kg
+                  </span>
+                  <span class="text-gray-500">
+                    1 kg
+                  </span>
+                  <span class="text-gray-500">
+                    250 gr
+                  </span>
+                  <span class="text-gray-500">
+                    250 gr
+                  </span>
+                </div>
+              </div>
+  
+   
 
           <div class="mt-4">
-            <h3 class="text-sm font-medium text-gray-900">Ingrendients:</h3>
+            <h3 class="font-bold">Ingrendients:</h3>
   
             <div class="mt-4">
-              <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
-                  <li class="text-gray-400"><span class="text-gray-600">Nutrisi</span></li>
-                  <li class="text-gray-400"><span class="text-gray-600">Vitamin E</span></li>
-                  <li class="text-gray-400"><span class="text-gray-600">Protein</span></li>
+              <ul role="list" class="list-disc space-y-2 pl-4 text-sm ml-3">
+                  <li ><span >Nutrisi</span></li>
+                  <li ><span >Vitamin E</span></li>
+                  <li><span >Protein</span></li>
               </ul>
             </div>
           </div>
@@ -149,14 +131,27 @@
       </div>
     </div>
 
-    <div class="fixed bottom-1 right-0 left-0 w-[95%] m-auto bg-blue-600 py-5 px-8 rounded-lg">
-        <div class="flex justify-between">
-            <div class="">
-                Image + title
+    <div class="mobile:relative tablet:fixed bottom-8 tablet:right-2 laptop:right-8 tablet:left-2 laptop:left-8  pt-3 pb-5 bg-white tablet:px-2 laptop:px-6 rounded-lg">
+        <div class=" grid mobile:grid-cols-1  tablet:grid-cols-2 ">
+          <div class="flex flex-row gap-3 items-center ">
+
+            <div class="h-11 w-11">
+              <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg"/>
             </div>
-            <div class="flex justify-between">
-                Qty + button
+            <div class="mt-2">
+              <h4 class="tablet:font-thin laptop:font-semibold text-black tablet:text-sm">Whiskas® Dry Adult Dewasa 7+,Cat food Rasa Mackerel</h4>
+              <span class="text-[#50CC98] tablet:font-thin laptop:font-semibold tablet:text-sm">CAT FOOD</span>
+            </div>
+          </div>
+            <div class="flex justify-between mx-8 items-center mobile:mt-5 tablet:mt-0">
+              <div>
+                <span class="mx-2" >Qut:</span>
+                <button (click)="decreaseQty()" [disabled]="numOfQty===1" class=" disabled:border-gray-600 border-2  cursor-pointer px-2 border-blue-600">-</button>
+                <span class="mx-3">{{numOfQty}}</span>
+                <button [disabled]="numOfQty===5" (click)="increaseQty()"  class="disabled:border-gray-600 border-2  cursor-pointer px-2 border-blue-600 ">+</button>
+              </div>
+              <button  class="text-white bg-[#828EF9] rounded-md h-[42px] cursor-pointer w-[173px]">ADD TO CARD</button>
             </div>
         </div>
-    </div>
+    </div> 
   </div>

@@ -1,64 +1,86 @@
-<div class="bg-white-900">
-    <div class="py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="sr-only">Products</h2>
-  
-      <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        <div class="shadow-inner">
-            <a class="group" routerLink="product/1">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <div class="details px-4">
-                    <p class="text-black-900 mt-4">
-                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                    </p>
-                    <p class="mt-1 text-3xl font-large text-gray-900 my-4">$48</p>
-                    <span class="text-gray-500 text-sm">
-                        Eligible for Shipping To Mars or somewhere else
-                    </span>
-                    <div class="flex justify-between mt-4">
-                        <span>Stars 4.5</span>
-                        <button type="button" class="rounded-md border border-buttonColor bg-indigo-600 py-2 px-4 text-sm font-medium text-buttonColor">
-                            <span>
-                                <i class="fa fa-heart-o text-buttonColor"></i> Watch
-                            </span>
-                        </button>
-                    </div>
-                </div>
-              </a>
+<div class="bg-white-600">
+  <div class="py-16">
+    <!-- <h2 class="sr-only">Products</h2> -->
+
+    <div class="w-full sm:w-1/2 lg:w-96 border border-gray-200 divide-y divide-gray-200">
+      <details>
+        <summary class="question py-3 px-4 cursor-pointer select-none w-full outline-none flex justify-between items-center">
+          <span>Category</span>
+          <i class="fa fa-chevron-down"></i>
+        </summary>
+        <div *ngFor="let category of categories">
+          <input type="checkbox" [value]="category" (change)="checkFilter($event, 'category')" class="appearance-none checked:bg-blue-500" /> <span>{{category}}</span>
         </div>
-  
+      </details>
+
+      <details>
+        <summary class="question py-3 px-4 cursor-pointer select-none w-full outline-none flex justify-between items-center">
+          <span>Expanded Filters</span>
+          <i class="fa fa-chevron-down"></i>
+        </summary>
+        <div *ngFor="let price of prices">
+          <input type="checkbox" [value]="price.value" (change)="checkFilter($event, 'price')" class="appearance-none checked:bg-blue-500" /> <span>{{price.name}}</span>
+        </div>
+      </details>
+    </div>
+
+    
+    <div class="shadow-md">
+
+
+      <div class="relative inline-block text-left">
         <div>
-            <a href="#" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-                <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-            </a>
+          <button type="button" class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+            Options
+            <!-- Heroicon name: mini/chevron-down -->
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
         </div>
-  
-        <div>
-            <a href="#" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-                <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-            </a>
+        <div class="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+            <form method="POST" action="#" role="none">
+              <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+            </form>
+          </div>
         </div>
-  
-        <div>
-            <a href="#" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-                <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-            </a>
+      </div>
+      
+      <div class=" px-6 grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 w-full gap-4">
+        <div class="w-full" *ngFor="let product of products; let i = index">
+          <a class="group" routerLink="product/1">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="assets/images/{{i + 1}}.png" alt="image Place holder"
+                class="h-full w-full object-cover object-center group-hover:opacity-75" />
+            </div>
+            <div class="details px-4">
+              <p class="text-black-900 mt-4">
+                {{product.title}}
+              </p>
+              <p class="mt-1 text-3xl font-large text-gray-900 my-4">${{product.price}}</p>
+              <span class="text-gray-500 text-sm">
+                {{product.summary}}
+              </span>
+              <div class="flex justify-between mt-4">
+                <span>Stars 4.5</span>
+                <button type="button"
+                  class="rounded-md border border-buttonColor bg-indigo-600 py-2 px-4 text-sm font-medium text-buttonColor">
+                  <span>
+                    <i class="fa fa-heart-o text-buttonColor"></i> Watch
+                  </span>
+                </button>
+              </div>
+            </div>
+          </a>
         </div>
-  
         <!-- More products... -->
       </div>
+
     </div>
   </div>
+</div>

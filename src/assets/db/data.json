@@ -1,0 +1,111 @@
+{
+    "products":[
+        {
+            "title": "Vintage Typewriter to post awesome stories about UI design and webdev.",
+            "price": 49.50,
+            "summary": "Eligible for Shipping To Mars or somewhere else",
+            "rating": 4,
+            "category": "Electronics"
+        },
+        {
+            "title": "Lee Pucker design. Leather botinki for handsome designers. Free shipping.",
+            "price": 13.95,
+            "summary": "1258 bids, 359 watchers $5.95 for shipping",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Timesaving kitten to save months on development. Playful, cute, cheap!",
+            "price": 128.99,
+            "summary": "Eligible for nothing :(",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!",
+            "price": 12.48,
+            "summary": "Wordwide shitting available Buyers protection possible!",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Creativity stimulating lotion. Drink every morning to generate better ideas!",
+            "price": 12.48,
+            "summary": "Wordwide shifting available Buyers protection possible!",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Prototyping items to create a lot if useless things...",
+            "price": 128.99,
+            "summary": "Showcasing onHovered state",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "John Von Ebalkin SPRING ",
+            "price": 13.95,
+            "summary": "1258 bids, 359 watchers $5.95 for shipping",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY",
+            "price": 9.50,
+            "summary": "Eligible for Shipping To Mars or somewhere else",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Professional teadrinking set for every designer and developer",
+            "price": 128.99,
+            "summary": "Eligible for nothing :(",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "One string Bonsai description",
+            "price": 11.68,
+            "summary": "Wordwide shifting available Buyers protection possible!",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "Simply best item in town to shine bright with your Nine Inch Nails",
+            "price": 1.25,
+            "summary": "Eligible for Shipping To Mars or somewhere else",
+            "rating": 4.5,
+            "category": "Electronics"
+        },
+        {
+            "title": "KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!",
+            "price": 23.25,
+            "summary": "1258 bids, 359 watchers $5.95 for shipping",
+            "rating": 4.5,
+            "category": "Business & Industrial"
+        }
+    ],
+    "category_filters":[
+        "Electronics",
+        "Business & Industrial",
+        "Cell Phones & Smartphones",
+        "Cell Phones & Smartphones",
+        "Business & Industrial",
+        "Expiring Soon",
+        "Most Rated"
+    ],
+    "price_filter":[
+        {"name": "Price 100 → 300", "value": "price>=100 && price <=300"},
+        {"name": "Price 200 → 400", "value": "price>=200 && price <=400"},
+        {"name": "Price 300 → 500", "value": "price>=300 && price <=500"},
+        {"name": "Price 400 → 600", "value": "price>=400 && price <=600"},
+        {"name": "Price 500 → 700", "value": "price>=500 && price <=700"},
+        {"name": "Price 600 → 800", "value": "price>=600 && price <=800"}
+    ],
+    "accounts":[
+        {
+            "email":"mahmoudhamad837@gmail.com",
+            "password":"123456789"
+        }
+    ]
+}
