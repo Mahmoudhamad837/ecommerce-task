@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent implements OnInit {
-
+  collapseNavMobile:number=-250
   constructor() { }
 
   ngOnInit(): void {
+  }
+  toggeleNavMobile(){
+this.collapseNavMobile=this.collapseNavMobile*-1
   }
 
 }
